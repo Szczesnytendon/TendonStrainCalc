@@ -41,7 +41,7 @@ for k = 0:(mas/si)
     tform = affinetform2d;
     if k == 0
         titlek=sprintf('DigitallyTransformed%d%%Strain.tif',k*si*100);
-        imwrite(warped,titlek)
+        imwrite(fixed,titlek)
     else
         % apply digital strain transformation matrix
         tform.A = [1+k*si 0 0; 0 1-pr*k*si 0; 0 0 1];
