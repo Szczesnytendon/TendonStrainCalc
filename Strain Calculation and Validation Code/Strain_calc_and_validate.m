@@ -504,15 +504,6 @@ for l = 1:numImg-1
     set(gca, 'ydir','reverse')
     hold off
     
-%% to save variables for mitochondrial code
-
-tempx=reshape(epsilonxx,vsize(2),vsize(1))';
-tempy=reshape(epsilonyy,vsize(2),vsize(1))';
-tempshear=reshape(gamma,vsize(2),vsize(1))';
-tempmaxp=reshape(maxP,vsize(2),vsize(1))'-1;
-tempmin=reshape(minP,vsize(2),vsize(1))'-1;
-save ("e93_r3_4",'tempx','tempy','tempmaxp','tempmin','tempshear','Xn','Yn'); %to save variables
-
 
 %%
 
